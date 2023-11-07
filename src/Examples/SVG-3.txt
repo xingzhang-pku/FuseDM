@@ -1,0 +1,11 @@
+width = 15;
+height = 50;
+gr = g [0,
+        [  rect [0, 180, 30, 300, width, height]
+        ,  rect [0, 180, 60, 310, width, height]
+        ,  rect [0, 180, 120, 310, width, height]
+        ,  rect [0, 180, 170, 290, width, height]
+        ]
+    ];
+main =
+    [gr, gr];

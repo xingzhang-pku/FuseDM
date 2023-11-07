@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>FuseDM</title>
+        <link rel="stylesheet" href="main.css" />
+        <script type="text/javascript" src="elm.js"></script>
+    </head>
+
+    <body>
+        <div id="myapp"></div>
+    </body>
+
+    <script type="text/javascript">
+        st = document.body.style;
+        st.margin = 0;
+        st.height = "968px";
+        var app = Elm.Main.init({
+            node: document.getElementById('myapp'),
+        });
+    </script>
+    <script type="text/javascript" src="./ace/ace.js"></script>
+    <script type="text/javascript" src="./src/Native/fileReader.js"></script>
+    <script type="text/javascript" src="./src/Native/aceCodeBox.js"></script>
+    <script type="text/javascript" src="./src/Native/global.js"></script>
+    <script type="text/javascript" src="./src/Native/canvas.js"></script>
+    <script type="text/javascript" src="./src/Native/group.js"></script>
+    <script type="text/javascript" src="./src/Native/dragTool.js"></script>
+    <script type="text/javascript" src="./src/Native/menuTool.js"></script>
+    <script type="text/javascript" src="./src/Native/resizeTool.js"></script>
+    <script type="text/javascript" src="./src/Native/iterateTool.js"></script>
+    <script type="text/javascript" src="./src/Native/drawTool.js"></script>
+    <script type="text/javascript" src="./src/Native/polygon.js"></script>
+    <script type="text/javascript" src="./src/Native/relateTool.js"></script>
+    <script type="text/javascript" src="./src/Native/selectRect.js"></script>
+    <script type="text/javascript" src="./src/Native/rotate.js"></script>
+    <script type="text/javascript" src="./src/Native/editTrans.js"></script>
+</html>

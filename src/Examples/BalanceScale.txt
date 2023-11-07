@@ -1,0 +1,29 @@
+main = 
+let line1_x1= 165 in
+let line1_y2= 243 in
+let ellipse1_rx= 62 in
+let ellipse1_cx= (line1_x1) in
+let ellipse1_cx= ellipse1_cx in
+let ellipse1_rx= ellipse1_rx in
+let line1_y2= line1_y2 in
+let graphics= 
+    g [0,
+        [line [ 0, 0, line1_x1, 155, (ellipse1_cx-ellipse1_rx), line1_y2]
+        ,line [ 0, 0, 165, 155, (ellipse1_cx+ellipse1_rx), (line1_y2)]
+        ,ellipse [ 0, 34, ellipse1_cx, (line1_y2), ellipse1_rx, 20]]] in
+let line6_x1= 302 in
+let line6_y1= 116 in
+let line5_x1= (line6_x1) in
+let line5_y1= (line6_y1) in
+let line7_x1= (line5_x1) in
+let line7_x2= (line7_x1) in
+let line7_y2= 377 in
+    graphics::
+    Graphic.map (\params->(\t2::t1::t0->t2::(\t3::t2::t1::t0->
+    Graphic.map (\params->(\t6::t5::t4::t3::t2::t1::t0->t6::t5::(t4+266)::(t3+55)::(t2+266)::(t1+55)::t0) params) t3::
+    Graphic.map (\params->(\t6::t5::t4::t3::t2::t1::t0->t6::t5::(t4+266)::(t3+55)::(t2+266)::(t1+55)::t0) params) t2::
+    Graphic.map (\params->(\t6::t5::t4::t3::t2::t1::t0->t6::t5::(t4+266)::(t3+55)::t2::t1::t0) params) t1::t0) t1::t0) params) graphics::
+        [ line [ 0, 0, line5_x1, line5_y1, 164, 156]
+        , line [ 0, 0, line6_x1, line6_y1, 431, 210]
+        , line [ 0, 0, line7_x1, (line5_y1), line7_x2, line7_y2]
+        , ellipse [ 0, 224, (line7_x2), (line7_y2), 127, 23]];

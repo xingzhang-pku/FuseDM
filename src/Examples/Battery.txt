@@ -1,0 +1,8 @@
+main = let rect1_x= 119 in
+let rect1_width= 178 in
+let rect1_y= 146 in
+let rect1_height= 76 in
+let rect2_height= 48 in
+let rect1_fill= 120 in
+[ rect [ 0, rect1_fill, rect1_x, rect1_y, rect1_width, rect1_height]
+, rect [ 0, (rect1_fill), (rect1_x+rect1_width), (rect1_y+(rect1_height-rect2_height)*0.5), 26, rect2_height]];

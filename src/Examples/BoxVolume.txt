@@ -1,0 +1,33 @@
+main = let polygon1_x0= 176 in
+let polygon1_x3= 279 in
+let polygon1_y3= 218 in
+let polygon1_y1= 252 in
+let polygon1_y0= 211 in
+let polygon1_x3= polygon1_x3 in
+let polygon1_y3= polygon1_y3 in
+let polygon1_x2= (polygon1_x3) in
+let polygon1_y2= (polygon1_y3+polygon1_y1-polygon1_y0) in
+let polygon2_y3= 293 in
+let polygon2_x3= 403 in
+let polygon2_y3= polygon2_y3 in
+let polygon2_y1= (polygon1_y2) in
+let polygon2_y0= (polygon1_y3) in
+let polygon1_x1= (polygon1_x0) in
+let polygon1_y1= polygon1_y1 in
+let polygon1_x2= polygon1_x2 in
+let polygon1_y2= polygon1_y2 in
+let polygon2_x2= (polygon2_x3) in
+let polygon2_y2= (polygon2_y3+polygon2_y1-polygon2_y0) in
+let polygon3_x2= (polygon2_x2) in
+let polygon3_x3= (polygon1_x2) in
+let polygon3_x0= (polygon1_x1) in
+let polygon3_y0= (polygon1_y1) in
+let polygon3_y2= (polygon2_y2) in
+let polygon3_y3= (polygon1_y2) in
+let rect1_fill= 41 in
+[ polygon [ 0, 73, (polygon1_x0,polygon1_y0)::(polygon1_x1,polygon1_y1)::(polygon1_x2,polygon1_y2)::(polygon1_x3,polygon1_y3)::nil]
+, polygon [ 0, 200, ((polygon1_x3),polygon2_y0)::((polygon1_x2),polygon2_y1)::(polygon2_x2,polygon2_y2)::(polygon2_x3,polygon2_y3)::nil]
+, polygon [ 0, 49, (polygon3_x0,polygon3_y0)::((polygon3_x2-polygon3_x3+polygon3_x0),(polygon3_y0+polygon3_y2-polygon3_y3))::(polygon3_x2,polygon3_y2)::(polygon3_x3,polygon3_y3)::nil]
+, polygon [ 0, 200, (((polygon1_x3+-103)),(polygon2_y0+-7))::(((polygon1_x2+-103)),(polygon2_y1+-7))::((polygon2_x2+-103),(polygon2_y2+-7))::((polygon2_x3+-103),(polygon2_y3+-7))::nil]
+, polygon [ 0, 73, (((polygon1_x0+-1)+125),((polygon1_y0+1)+74))::(((polygon1_x1+-1)+125),((polygon1_y1+1)+74))::(((polygon1_x2+-1)+125),((polygon1_y2+1)+74))::(((polygon1_x3+-1)+125),((polygon1_y3+1)+74))::nil]
+, rect [ 0, rect1_fill, 402, 119, 167, 142], rect [ 0, (rect1_fill), 433, 86, 109, 206]];

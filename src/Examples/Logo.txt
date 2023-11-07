@@ -1,0 +1,19 @@
+main = let polygon1_x0= 182 in
+let polygon1_y0= 132 in
+let polygon1_x0= polygon1_x0 in
+let polygon1_y0= polygon1_y0 in
+let polygon1_x1= (polygon1_x0+200) in
+let polygon1_y1= (polygon1_y0) in
+let polygon1_x0= polygon1_x0 in
+let polygon1_y0= polygon1_y0 in
+let polygon2_x0= (polygon1_x0) in
+let polygon2_y0= (polygon1_y0) in
+let polygon2_x2= (polygon2_x0) in
+let polygon2_y2= (polygon2_y0+200) in
+let polygon2_x1= (polygon1_x0+100) in
+let polygon2_y1= (polygon1_y0+100) in
+let polygon1_x2= (polygon1_x1) in
+let polygon1_y2= (polygon1_y1+200) in
+[ polygon [ 0, 146, (polygon1_x0,polygon1_y0)::(polygon1_x1,polygon1_y1)::(polygon1_x2,polygon1_y2)::nil]
+, polygon [ 0, 0, (polygon2_x0,polygon2_y0)::(polygon2_x1,polygon2_y1)::(polygon2_x2,polygon2_y2)::nil]
+, polygon [ 0, 225, ((polygon2_x2),(polygon2_y2))::((polygon2_x1),(polygon2_y1))::((polygon1_x2),(polygon1_y2))::nil]];

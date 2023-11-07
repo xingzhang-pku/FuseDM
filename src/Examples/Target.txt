@@ -1,0 +1,11 @@
+main = 
+let graphics= 
+    g [0,let x1= 255 in
+        let y1= 211 in
+        [ circle [ 0, 0, x1, y1, 155]
+        , circle [ 0, 52, x1, y1, 131]
+        , circle [ 0, 0, x1, y1, 107]
+        , circle [ 0, 52, x1, y1, 83]
+        , circle [ 0, 0, x1, y1, 59]]] 
+in
+graphics::[];

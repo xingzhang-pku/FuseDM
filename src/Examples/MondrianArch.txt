@@ -1,0 +1,10 @@
+main = let rect2_x= 167 in
+let rect1_y= 144 in
+let rect1_height= 35 in
+let rect2_y= (rect1_y+rect1_height) in
+let rect1_x= (rect2_x) in
+let rect1_width= 152 in
+let rect3_width= 31 in
+[ rect [ 0, 116, rect1_x, rect1_y, rect1_width, rect1_height]
+, rect [ 0, 0, rect2_x, rect2_y, 31, 124]
+, rect [ 0, 229, (rect1_x+rect1_width-rect3_width), (rect2_y), rect3_width, 124]];

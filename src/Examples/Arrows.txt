@@ -1,0 +1,22 @@
+main = let line1_x1= 289 in
+let line1_y1= 208 in
+let line1_y1= line1_y1 in
+let line1_x1= line1_x1 in
+let graphics= 
+    g [ 0
+      , [line [ 0, 0, line1_x1, line1_y1, 138, 117]
+        ,line [ 0, 0, (line1_x1), (line1_y1), 219, 217]
+        ,line [ 0, 0, (line1_x1), (line1_y1), 287, 152]]] in
+    graphics::
+    Graphic.map (\params-> (\t2::t1::t0-> t2::(\t3::t2::t1::t0-> 
+    Graphic.map (\params-> (\t6::t5::t4::t3::t2::t1::t0-> t6::t5::(t4+257)::(t3+141)::(t2+257)::(t1+141)::t0) params) t3::
+    Graphic.map (\params-> (\t6::t5::t4::t3::t2::t1::t0-> t6::t5::(t4+257)::(t3+141)::(t2+257)::(t1+141)::t0) params) t2::
+    Graphic.map (\params-> (\t6::t5::t4::t3::t2::t1::t0-> t6::t5::(t4+257)::(t3+141)::(t2+257)::(t1+141)::t0) params) t1::t0) t1::t0) params) 
+    Graphic.map (\params-> (\t2::t1::t0-> (t2+178)::t1::t0) params) 
+    Graphic.map (\params->(\t2::t1::t0->t2::(\t3::t2::t1::t0->
+    Graphic.map (\params->(\t6::t5::t4::t3::t2::t1::t0->t6::t5::(t4+-34)::(t3+-13)::(t2+-34)::(t1+-13)::t0) params) t3::Graphic.map (\params->(\t6::t5::t4::t3::t2::t1::t0->t6::t5::(t4+-34)::(t3+-13)::(t2+-34)::(t1+-13)::t0) params) t2::
+    Graphic.map (\params->(\t6::t5::t4::t3::t2::t1::t0->t6::t5::(t4+-34)::(t3+-13)::(t2+-34)::(t1+-13)::t0) params) t1::t0) t1::t0) params) graphics::
+    Graphic.map (\params-> (\t2::t1::t0-> t2::(\t3::t2::t1::t0-> 
+    Graphic.map (\params-> (\t6::t5::t4::t3::t2::t1::t0-> t6::t5::(t4+3)::(t3+157)::(t2+3)::(t1+157)::t0) params) t3::
+    Graphic.map (\params-> (\t6::t5::t4::t3::t2::t1::t0-> t6::t5::(t4+3)::(t3+157)::(t2+3)::(t1+157)::t0) params) t2::Graphic.map (\params-> (\t6::t5::t4::t3::t2::t1::t0-> t6::t5::(t4+3)::(t3+157)::(t2+3)::(t1+157)::t0) params) t1::t0) t1::t0) params) 
+    Graphic.map (\params->(\t2::t1::t0->(t2+-52)::t1::t0) params) graphics::[];

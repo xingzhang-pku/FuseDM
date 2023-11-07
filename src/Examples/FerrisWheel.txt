@@ -1,0 +1,30 @@
+main = 
+let circle1_cx= 167 in
+let circle1_cy= 190 in
+let circle1_cx= circle1_cx in
+let circle1_cy= circle1_cy in
+let circle1_r= 71 in
+let graphics0= 
+    g [0,
+        [ line [ 0, 0, (circle1_cx), (circle1_cy-circle1_r), (circle1_cx), (circle1_cy)]
+        ,line [ 0, 0, 222.38, 145.98, (circle1_cx), (circle1_cy)]
+        ,line [ 0, 0, 235.6712, 205.904, (circle1_cx), (circle1_cy)]
+        ,line [ 0, 0, 197.171024, 253.424016, (circle1_cx), (circle1_cy)]
+        ,line [ 0, 0, 136.2353024, 252.85628864, (circle1_cx), (circle1_cy)]
+        ,line [ 0, 0, 98.8979823488, 204.97443482879999, (circle1_cx), (circle1_cy)]
+        ,line [ 0, 0, 113.096689889792, 146.16457582592, (circle1_cx), (circle1_cy)]]] in
+let graphics1= 
+    g [0,
+    [ rect [ 0, 207, 159, 109, 18, 19]
+    , rect [ 0, 207, 213.56, 131.72, 18, 19]
+    , rect [ 0, 207, 229.6656, 188.3632, 18, 19]
+    , rect [ 0, 207, 195.469376, 236.044352, 18, 19]
+    , rect [ 0, 207, 137.07641856, 238.93361152, 18, 19]
+    , rect [ 0, 207, 98.6191625216, 195.1784456192, 18, 19]
+    , rect [ 0, 207, 108.90469318041599, 138.053583050752, 18, 19]]] in
+let circle1_cx= circle1_cx in
+let circle1_cy= circle1_cy in
+[ circle [ 0, 55, circle1_cx, circle1_cy, circle1_r]
+, graphics0
+, graphics1
+, circle [ 0, 220, (circle1_cx), (circle1_cy), 15]];

@@ -1,0 +1,4 @@
+f a b = (a, 2);
+x = 1;
+y = x;
+main = f x y;

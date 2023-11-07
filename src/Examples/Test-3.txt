@@ -1,0 +1,6 @@
+sum n :=
+    case n of
+    0 -> 0
+    | x -> sum (x - 1) + x;
+
+main = sum 2;

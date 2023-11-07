@@ -1,0 +1,28 @@
+main = 
+let graphics = g [0,let y1= 124 in
+    [ rect [ 0, 29, 149, y1, 28, 115]
+    , rect [ 0, 29, 192, y1, 28, 115]
+    , rect [ 0, 29, 235, y1, 28, 115]
+    , rect [ 0, 29, 278, y1, 28, 115]
+    , rect [ 0, 29, 321, y1, 28, 115]
+    , rect [ 0, 29, 364, y1, 28, 115]
+    , rect [ 0, 29, 407, y1, 28, 115]]] in
+let rect8_x= 93 in
+let getCttParam= \obj->nth 3 (Graphic.unwrap (nth 0 (nth 1 (Graphic.unwrap (nth 0 obj))))) in
+let setCttFun= \rect1_y->\obj->let getCttParam= \obj->nth 5 (Graphic.unwrap (nth 0 (nth 1 (Graphic.unwrap (nth 0 obj))))) in
+let setCttFun= \rect1_height->\obj->let getCttParam= \obj->nth 5 (Graphic.unwrap (nth 2 obj)) in
+let setCttFun= \rect9_height->\obj->let getCttParam= \obj->nth 3 (Graphic.unwrap (nth 1 obj)) in
+let setCttFun= \rect8_y->\obj->mod 2 (\x->
+        Graphic.map (\params->(\t6::t5::t4::t3::t2::t1::t0->t6::t5::t4::(rect1_y+rect1_height-rect9_height-rect8_y+rect1_y)::t2::t1::t0) params) x) (mod 1 (\x->
+        Graphic.map (\params->(\t6::t5::t4::t3::t2::t1::t0->t6::t5::t4::rect8_y::t2::t1::t0) params) x) (mod 2 (\x->
+        Graphic.map (\params->(\t6::t5::t4::t3::t2::t1::t0->t6::t5::t4::t3::t2::rect9_height::t0) params) x) (mod 0 (\x->
+        Graphic.map (\params->mod 1 (\x->mod 0 (\x->
+        Graphic.map (\params->(\t6::t5::t4::t3::t2::t1::t0->t6::t5::t4::rect1_y::t2::rect1_height::t0) params) x) x) params) x) obj))) in
+let obj= obj in
+setCttFun (getCttParam obj) obj in
+let obj= obj in
+setCttFun (getCttParam obj) obj in
+let obj= obj in
+setCttFun (getCttParam obj) obj in
+let obj= (graphics::[rect [ 0, 224, rect8_x, 137, 398, 26], rect [ 0, 224, (rect8_x), 207, 398, 26]]) in
+setCttFun (getCttParam obj) obj;

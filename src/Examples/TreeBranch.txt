@@ -1,0 +1,13 @@
+main = let polygon1_x0= 117 in
+let polygon1_y0= 172 in
+let polygon1_y1= 278 in
+let polygon2_x0= 206 in
+let polygon2_y0= 159 in
+let polygon2_y2= 294 in
+let polygon2_y1= ((polygon2_y0+polygon2_y2)*0.5) in
+let polygon2_x0= polygon2_x0 in
+let polygon2_x1= 157 in
+[ polygon [ 0, 32, (polygon1_x0,polygon1_y0)::((polygon1_x0),polygon1_y1)::(579,((polygon1_y0+polygon1_y1)*0.5))::nil]
+, polygon [ 0, 109, (polygon2_x0,polygon2_y0)::(polygon2_x1,polygon2_y1)::((polygon2_x0),polygon2_y2)::((polygon2_x0+polygon2_x0-polygon2_x1),(polygon2_y1))::nil]
+, polygon [ 0, 109, ((polygon2_x0+122),(polygon2_y0+1))::((polygon2_x1+122),(polygon2_y1+1))::(((polygon2_x0+122)),(polygon2_y2+1))::(((polygon2_x0+122)+polygon2_x0-polygon2_x1),((polygon2_y1+1)))::nil]
+, polygon [ 0, 109, (((polygon2_x0+118)+122),((polygon2_y0+-1)+1))::(((polygon2_x1+118)+122),((polygon2_y1+-1)+1))::((((polygon2_x0+118)+122)),((polygon2_y2+-1)+1))::((((polygon2_x0+118)+122)+polygon2_x0-polygon2_x1),(((polygon2_y1+-1)+1)))::nil]];
